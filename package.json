@@ -1,8 +1,7 @@
 {
-  "name": "marko-mdc",
+  "name": "material-components-marko",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Material Design styled components for Marko.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
