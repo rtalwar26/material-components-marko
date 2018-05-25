@@ -16,3 +16,12 @@ Material-components-marko integrates the [mdc-web](https://github.com/material-c
 * user friendly component api
 * SSR (Server Side Rendering) support
 
+## Demo
+
+```
+$ git clone https://github.com/rtalwar26/material-components-marko
+
+$ cd material-components-marko
+$ yarn
+$ yarn start
+```

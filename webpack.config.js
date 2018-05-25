@@ -1,11 +1,16 @@
 module.exports = {
+    devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './example'
+    },
     entry: {
-        button: "./example/button.js"
+        button: "./example/button/client.js"
     },
     output: {
         path: __dirname,
-        filename: "static/bundle.js"
+        filename: "static/[name].js"
     },
+    devtool:"eval-source-map",
     resolve: {
         extensions: ['.js', '.marko'],
         modules: ['./', 'node_modules']
@@ -32,7 +37,7 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {
-                            includePaths: ['./node_modules']
+                            includePaths: ['./node_modules','./components']
                         }
 
                     },

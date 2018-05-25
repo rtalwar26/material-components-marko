@@ -1,3 +1,10 @@
-<button class="foo-button mdc-button">
-    Button
-</button>
+<if (input.href)>
+    <a href="${input.href}" class="${input.class}" on-click( "clickHandler") disabled=input.disabled>
+        <include(input.body)/>
+    </a>
+</if>
+<else>
+    <button class="${input.class}" on-click( "clickHandler") disabled=input.disabled>
+        <include(input.body)/>
+    </button>
+</else>
