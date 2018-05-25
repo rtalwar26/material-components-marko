@@ -1,10 +1,10 @@
 module.exports = {
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: './example'
+        contentBase: './examples'
     },
     entry: {
-        button: "./example/button/client.js"
+        button: "./examples/button/client.js"
     },
     output: {
         path: __dirname,
