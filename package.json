@@ -1,6 +1,6 @@
 {
   "name": "material-components-marko",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Material Design styled components for Marko.js",
   "scripts": {
     "watch": "webpack --watch",
