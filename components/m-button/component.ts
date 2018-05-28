@@ -1,4 +1,5 @@
-import {MDCRipple} from '@material/ripple';
+import RippleAdapter from "./RippleAdapter";
+
 
 var comp = {
     mdcComponents:[],
@@ -7,8 +8,7 @@ var comp = {
         };
     },
     onMount: function () {
-        console.log(this.input.ripple);
-        let ripple = this.input.ripple ? new MDCRipple(this.el) : null;
+        let ripple = this.input.ripple ? new RippleAdapter().activate(this.el) : null;
 
         ripple && this.mdcComponents.push(ripple);
     },

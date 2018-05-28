@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "module": "commonjs",
+        "allowJs": true,
         "target": "es2017",
         "noImplicitAny": false,
         "sourceMap": true  ,

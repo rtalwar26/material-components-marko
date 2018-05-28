@@ -1,13 +1,12 @@
 "use strict";
-const ripple_1 = require("@material/ripple");
+const RippleAdapter_1 = require("./RippleAdapter");
 var comp = {
     mdcComponents: [],
     onCreate: function () {
         this.state = {};
     },
     onMount: function () {
-        console.log(this.input.ripple);
-        let ripple = this.input.ripple ? new ripple_1.MDCRipple(this.el) : null;
+        let ripple = this.input.ripple ? new RippleAdapter_1.default().activate(this.el) : null;
         ripple && this.mdcComponents.push(ripple);
     },
     clickHandler: function (...args) {
